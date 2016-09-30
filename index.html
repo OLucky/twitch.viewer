@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OLucky's Twitch Viewer</title>
+    <meta name='viewport' content="width=device-width initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/index.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div id="header" class="col-xs-12">
+    <h1 class="col-sm-offset-1 col-sm-3 col-xs-12 text-center">Twitch Viewer</h1>
+    <input id="user_streamer" type="text" class="col-sm-offset-3 col-sm-2 col-xs-12" placeholder="Check another streamer"></input>
+    <button id="user_button" class="btn col-sm-offset-0 col-sm-1 col-xs-offset-4 col-xs-4">Check</button>
+  </div>
+
+  <table id="user_table" class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
+  </table>
+
+
+    <table id="main_table" class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
+      <tr>
+        <th class="col-xs-5">Streamer</th>
+        <th class="col-xs-2">Status</th>
+        <th class="col-xs-5">Streams</th>
+      </tr>
+    </table>
+    <div id="filter_tab" class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
+      <p>Show: <span class="switch online">Online</span> | <span class="switch offline">Offline</span> | <span class="switch">All</span></p>
+    </div>
+
+</body>
+
+</html>
